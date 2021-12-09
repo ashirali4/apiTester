@@ -3,7 +3,15 @@ const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
-const io = new Server(server, true   );
+var options = {
+  allowUpgrades: true,
+  transports: ["polling", "websocket"],
+  pingTimeout: 9000,
+  pingInterval: 3000,
+  httpCompression: true,
+  origins: "*:*",
+};
+const io = new Server(server, options, true   );
 var channel = "ciao"
 const PORT = process.env.PORT || 3000                                                   
 
