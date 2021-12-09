@@ -8,7 +8,7 @@ var channel = "ciao"
 
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile( '/index.html');
 });
 
 io.on('connection', (socket) => {
