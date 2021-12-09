@@ -18,6 +18,7 @@ io.on('connection', (socket) => {
             socket.broadcast.emit("message", {
                 message: data.message
             });
+            console.log("received");
         });
 });
 
