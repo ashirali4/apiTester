@@ -1,0 +1,15 @@
+{
+  "name": "whatsapp",
+  "version": "1.0.0",
+  "description": "Whatsapp Status checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "16.13.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
